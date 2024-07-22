@@ -1,0 +1,59 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #282c34;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #61dafb;
+}
+
+.nav {
+  margin-top: 80px; /* Ajuste para o cabeçalho fixo */
+  padding: 20px;
+  text-align: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #61dafb;
+}
