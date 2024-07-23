@@ -2,15 +2,21 @@ import React from 'react';
 import './Card.css';
 
 interface CardProps {
-  title: string;
-  description: string;
+  name: string;
+  image: string;
+  species: string;
+  status: string;
+  location: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, description }) => {
+const Card: React.FC<CardProps> = ({ name, image, species, status, location }) => {
   return (
     <div className="card">
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <img src={image} alt={name} className="card-image" />
+      <h3>{name}</h3>
+      <p><strong>Espécies:</strong> {species}</p>
+      <p><strong>Status:</strong> {status}</p>
+      <p><strong>Última Localização:</strong> {location}</p>
     </div>
   );
 };

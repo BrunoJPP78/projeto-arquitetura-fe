@@ -1,22 +1,57 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import Card from '../../components/Card/Card';
 import '../Personagens/Personagens.css';
 
+interface Character {
+  id: number;
+  name: string;
+  image: string;
+  species: string;
+  status: string;
+  location: {
+    name: string;
+  };
+}
+
 const Personagens: React.FC = () => {
-  // Placeholder data for personagens
-  const personagensData = [
-    { id: 1, nome: 'Personagem 1', descricao: 'This is personagem 1' },
-    { id: 2, nome: 'Personagem 2', descricao: 'This is personagem 2' },
-    { id: 3, nome: 'Personagem 3', descricao: 'This is personagem 3' },
-    // Add more personagem data as needed
-  ];
+  const [characters, setCharacters] = useState<Character[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    axios.get('https://rickandmortyapi.com/api/character')
+      .then(response => {
+        setCharacters(response.data.results);
+        setLoading(false);
+      })
+      .catch(() => {
+        setError('Failed to fetch characters');
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
 
   return (
     <div className="personagens">
-      <h2>Personagens</h2>
+      <h2 className='title-name'>Personagens</h2>
       <div className="card-container">
-        {personagensData.map(personagem => (
-          <Card key={personagem.id} title={personagem.nome} description={personagem.descricao} />
+        {characters.map(character => (
+          <Card
+            key={character.id}
+            name={character.name}
+            image={character.image}
+            species={character.species}
+            status={character.status}
+            location={character.location.name}
+          />
         ))}
       </div>
     </div>

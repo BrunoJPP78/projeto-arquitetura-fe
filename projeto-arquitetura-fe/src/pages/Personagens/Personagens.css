@@ -1,15 +1,20 @@
 .personagens {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .personagens h2 {
-    margin-bottom: 20px;
-  }
-  
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  padding: 20px;
+}
+
+.title-name {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title-name{
+  color: #E89242FF;
+}
   
