@@ -4,12 +4,13 @@ import Personagens from './pages/Personagens/Personagens';
 import Episodios from './pages/Episodios/Episodios';
 import Localizacao from './pages/Localizacao/Localizacao';
 import Home from './pages/Home';
+import RickAndMortyLogo from './assets/images/Rick_and_Morty_logo.webp';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Header title="Rick and Morty" subtitle="Bruno Lima" />
+      <Header imageSrc={RickAndMortyLogo} />
       <nav className="nav">
       </nav>
       <Routes>

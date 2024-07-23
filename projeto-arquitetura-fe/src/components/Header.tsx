@@ -2,17 +2,15 @@ import React from 'react';
 import './Header.css';
 
 interface HeaderProps {
-  title: string;
-  subtitle?: string;
+  imageSrc: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ title, subtitle }) => {
+const Header: React.FC<HeaderProps> = ({ imageSrc }) => {
   return (
     <header className="header">
       <div className="header-content">
         <div>
-          <h1>{title}</h1>
-          {subtitle && <h2>{subtitle}</h2>}
+          <img src={imageSrc} alt="Logo" className="header-image" />
         </div>
         <nav className="nav">
           <ul>
