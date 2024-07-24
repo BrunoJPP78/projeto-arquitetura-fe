@@ -1,19 +1,31 @@
 .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Faz com que o conteúdo ocupe a altura total da viewport */
-    text-align: center; /* Centraliza o texto */
-    padding: 20px;
-  }
-  
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home h2 {
+  color: #E89242FF;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.home p {
+  color: #444;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
   .home h2 {
-    margin-bottom: 20px;
+    font-size: 2em;
   }
-  
+
   .home p {
-    font-size: 1.2em;
-    color: #333;
+    font-size: 1em;
   }
-  
+}

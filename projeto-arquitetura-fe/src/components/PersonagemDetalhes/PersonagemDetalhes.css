@@ -1,0 +1,63 @@
+.title-name {
+    color: #E89242FF;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+.personagem-detalhes {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 2px solid black; 
+  border-radius: 8px; 
+  color: black;
+}
+
+.character-info {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.character-details {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.character-image {
+  flex: 0 0 200px; 
+}
+
+.character-image img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.episode-section {
+  margin-top: 20px;
+  border: 2px solid black; 
+  border-radius: 8px; 
+  padding: 10px; 
+}
+
+.episode-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.episode-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.episode-section ul li {
+    margin-bottom: 10px;
+    font-size: 1em; /* Tamanho de fonte ajustado para os itens da lista */
+    color: #333;
+    padding: 5px; /* Adiciona um pouco de espaço ao redor de cada item */
+    border: 1px solid #ddd; /* Borda fina ao redor de cada card */
+    border-radius: 4px; /* Bordas arredondadas para os cards */
+    background-color: #fff; /* Cor de fundo dos cards */
+    max-width: 250px; /* Define uma largura máxima para os cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve aos cards */
+  }
