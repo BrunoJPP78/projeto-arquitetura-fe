@@ -1,0 +1,63 @@
+.localizacao-detalhes {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.location-info {
+  margin-bottom: 20px;
+}
+
+.location-details {
+  text-align: center;
+}
+
+.residents-section {
+  margin-top: 20px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.residents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.residente_h3{
+  color: #E89242FF;
+}
