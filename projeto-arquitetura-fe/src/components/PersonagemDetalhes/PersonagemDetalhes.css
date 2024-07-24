@@ -52,12 +52,25 @@
 
 .episode-section ul li {
     margin-bottom: 10px;
-    font-size: 1em; /* Tamanho de fonte ajustado para os itens da lista */
+    font-size: 1em;
     color: #333;
-    padding: 5px; /* Adiciona um pouco de espaço ao redor de cada item */
-    border: 1px solid #ddd; /* Borda fina ao redor de cada card */
-    border-radius: 4px; /* Bordas arredondadas para os cards */
-    background-color: #fff; /* Cor de fundo dos cards */
-    max-width: 250px; /* Define uma largura máxima para os cards */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve aos cards */
+    padding: 5px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    background-color: #fff;
+    max-width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .spinner {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #61dafb; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }

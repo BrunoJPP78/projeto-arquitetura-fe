@@ -1,4 +1,3 @@
-/* Header.css */
 .header {
   position: fixed;
   top: 0;
@@ -38,15 +37,19 @@
   padding: 0;
 }
 
-.nav ul li a {
-  color: #69C8ECFF;
-  text-decoration: none;
+.nav ul li button {
+  background: none;
+  border: none;
+  color: #61dafb;
   font-size: 1.2em;
+  cursor: pointer;
   transition: color 0.3s ease;
+  padding: 0;
+  outline: none;
 }
 
-.nav ul li a:hover {
-  color: #61dafb;
+.nav ul li button:hover {
+  color: #69C8ECFF;
 }
 
 .header-image {

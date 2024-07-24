@@ -6,6 +6,7 @@ import Localizacao from './pages/Localizacao/Localizacao';
 import Home from './pages/Home';
 import RickAndMortyLogo from './assets/images/Rick_and_Morty_logo.webp';
 import PersonagemDetalhes from './components/PersonagemDetalhes/PersonagemDetalhes';
+import LocalizacaoDetalhes from './components/LocalizacaoDetalhes/LocalizacaoDetalhes';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/episodios" element={<Episodios />} />
         <Route path="/localizacao" element={<Localizacao />} />
         <Route path="/personagens/:id" element={<PersonagemDetalhes />} />
+        <Route path="/localizacao/:id" element={<LocalizacaoDetalhes />} />
       </Routes>
     </div>
   );

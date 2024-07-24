@@ -28,7 +28,7 @@ const Episodios: React.FC = () => {
   }, []);
 
   if (loading) {
-    return <div>Carregando...</div>;
+    return <div className="spinner"></div>;
   }
 
   if (error) {
