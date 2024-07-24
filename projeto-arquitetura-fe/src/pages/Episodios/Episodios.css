@@ -1,3 +1,46 @@
-.title-name{
-    color: #E89242FF;
-  }
+.title-name {
+  color: #E89242FF;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.episodes {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.episode-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.episode-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.episode-item:hover {
+  transform: scale(1.02);
+}
+
+.episode-item h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+}
+
+.episode-item p {
+  margin: 5px 0 0;
+  color: #666;
+}

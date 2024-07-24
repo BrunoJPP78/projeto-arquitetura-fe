@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Card from '../../components/Card/Card';
 import '../Personagens/Personagens.css';
+import { useNavigate } from 'react-router-dom';
 
 interface Character {
   id: number;
@@ -15,6 +16,7 @@ interface Character {
 }
 
 const Personagens: React.FC = () => {
+  const navigate = useNavigate();
   const [characters, setCharacters] = useState<Character[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -32,7 +34,7 @@ const Personagens: React.FC = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div>Carregando...</div>;
   }
 
   if (error) {
@@ -51,6 +53,7 @@ const Personagens: React.FC = () => {
             species={character.species}
             status={character.status}
             location={character.location.name}
+            onClick={() => navigate(`/personagens/${character.id}`)}
           />
         ))}
       </div>
