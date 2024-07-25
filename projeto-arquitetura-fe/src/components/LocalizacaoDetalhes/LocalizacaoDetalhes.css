@@ -1,4 +1,4 @@
-.localizacao-detalhes {
+.episodio-detalhes {
   border: 1px solid black;
   padding: 20px;
   margin: 20px auto;
@@ -6,21 +6,21 @@
   text-align: center;
 }
 
-.location-info {
+.episode-info {
   margin-bottom: 20px;
 }
 
-.location-details {
+.episode-details {
   text-align: center;
 }
 
-.residents-section {
+.characters-section {
   margin-top: 20px;
   border: 1px solid black;
   padding: 20px;
 }
 
-.residents {
+.characters {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -58,6 +58,6 @@
   font-size: 0.9em;
 }
 
-.residente_h3{
+.characters_h3 {
   color: #E89242FF;
 }

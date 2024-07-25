@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import RickAndMortyLogo from './assets/images/Rick_and_Morty_logo.webp';
 import PersonagemDetalhes from './components/PersonagemDetalhes/PersonagemDetalhes';
 import LocalizacaoDetalhes from './components/LocalizacaoDetalhes/LocalizacaoDetalhes';
+import EpisodiosDetalhes from './components/EpisodiosDetalhes/EpisodiosDetalhes';
 import './App.css';
 
 function App() {
@@ -16,12 +17,13 @@ function App() {
       <nav className="nav">
       </nav>
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/personagens" element={<Personagens />} />
         <Route path="/episodios" element={<Episodios />} />
         <Route path="/localizacao" element={<Localizacao />} />
         <Route path="/personagens/:id" element={<PersonagemDetalhes />} />
         <Route path="/localizacao/:id" element={<LocalizacaoDetalhes />} />
+        <Route path="/episodios/:id" element={<EpisodiosDetalhes />} />
       </Routes>
     </div>
   );
