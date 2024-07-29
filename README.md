@@ -30,6 +30,7 @@
 <h2>Instalação e Execução</h2>
 <ul>
   <li><b>Clone o repositório:</b> git clone https://github.com/BrunoJPP78/projeto-arquitetura-fe.git</li>
+  <li>Acesse a pasta projeto-arquitetura-fe utilizando o comando: cd /projeto-arquitetura-fe</li>
   <li><b>Instale as dependências:</b> npm install</li>
   <li><b>Execute o projeto:</b> npm run dev</li>
 </ul>
